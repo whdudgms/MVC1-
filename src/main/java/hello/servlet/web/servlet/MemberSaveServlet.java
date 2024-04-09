@@ -26,6 +26,7 @@ public class MemberSaveServlet extends HttpServlet {
 
         Member member = new Member(username, age);
         memberRepository.save(member);
+
         PrintWriter w = response.getWriter();
         w.write("<html>\n" +
                 "<head>\n" +
